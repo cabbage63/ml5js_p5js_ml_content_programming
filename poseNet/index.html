@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PoseNet</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.2.3/dist/ml5.min.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <h1>PoseNet</h1>
+    <p id="status">poseNetをロード中</p>
+    <div id="control">
+        <div>
+            <input type="checkbox" id="overlaid">
+            <label for="overlaid">元動画を表示する</label>
+        </div>
+        <div>
+            <input type="checkbox" id="skeleton" checked>
+            <label for="skeleton">スケルトンを描画する</label>
+            <input type="color" id="skeletonColor" value="#00ff00">
+            <input type="range" id="skeletonStrokeWeight" min="1" max="20" value="1">
+        </div>
+        <div>
+            <input type="checkbox" id="keypoints" checked>
+            <label for="keypoints">キーポイントを描画する</label>
+            <input type="color" id="keypointsColor" value="#ff0000">
+            <input type="range" id="keypointsRadius" min="1" max="20" value="5">
+        </div>
+    </div>
+    <p>Video by ミソジサラリーマン様 (@keriwaza)</p>
+</body>
+</html>
